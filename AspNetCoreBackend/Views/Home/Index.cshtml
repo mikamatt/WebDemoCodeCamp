@@ -3,6 +3,20 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Tervetuloa Omalle Web-Demo sivulle.</h1>
+    <p>Tähän sisältöä</p>
+    @foreach (string otsikko in Model)
+    {
+    <h3>@otsikko</h3>
+    }   
+
+
+    @*
+    @for (int i = 0; i < 10; i++)
+    {
+    <h3>@i</h3>
+    }
+    *@ 
+    <p>Learn about <a href="https://docs.microsoft.com/en-us/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c">Razor technology</a>.</p>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

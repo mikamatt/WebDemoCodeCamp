@@ -13,6 +13,11 @@ namespace AspNetCoreBackend.Controllers
         public IActionResult Index()
         {
             return View();
+            string tiedosto = @"/home/mika/CodeBootCamp/WebDemoCodeCamp/AspNetCoreBackend/wwwroot";
+            List<string> otsikot =
+            System.IO.File.ReadAllLines(tiedosto).ToList();
+
+            return View(otsikot);
         }
 
         public IActionResult Privacy()
