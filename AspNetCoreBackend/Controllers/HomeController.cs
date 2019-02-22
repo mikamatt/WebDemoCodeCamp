@@ -18,6 +18,11 @@ namespace AspNetCoreBackend.Controllers
 
             return View(otsikot);
         }
+        
+        public IActionResult Info()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
