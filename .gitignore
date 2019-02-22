@@ -1,0 +1,6 @@
+################################################################################
+# This .gitignore file was manually created by me.
+################################################################################
+
+AspNetCoreBackend/bin/Debug/netcoreapp2.2
+AspNetCoreBackend/obj
