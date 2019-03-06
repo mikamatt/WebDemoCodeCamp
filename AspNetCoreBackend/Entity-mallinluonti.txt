@@ -1,0 +1,6 @@
+Komento mallin luontiin komentorivillä
+CodeBootCamp/WebDemoCodeCamp/AspNetCoreBackend -hakemistossA
+
+dotnet ef dbcontext scaffold "Server=localhost;Database=Northwind;User Id=SA;Password=Mika_SQL_Admin;" Microsoft.EntityFrameworkCore.SqlServer -o Database
+
+
