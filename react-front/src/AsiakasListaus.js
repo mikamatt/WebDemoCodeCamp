@@ -10,14 +10,14 @@ class AsiakasLista extends Component {
     }
 
     componentDidMount() {
-
+       
         console.log("AsiakasLista.componentDidMount");
         let komponentti = this;
 
-        fetch('https://localhost:5001/api/asiakkaat')
+        fetch('https://localhost:44358/api/asiakkaat')
         .then(response => response.json())
         .then(json => {
-
+         
             console.log("Fetch-kutsu valmis!");
             console.log(json);
 
@@ -30,11 +30,6 @@ class AsiakasLista extends Component {
     }
 
   render() {
-    return (
-      <div>
-
-      </div>
-    );
     console.log("AsiakasLista.render");
 
     if (this.state.ladattu === false) {
@@ -60,3 +55,5 @@ class AsiakasLista extends Component {
     }    
   }
 }
+
+export default AsiakasLista;
