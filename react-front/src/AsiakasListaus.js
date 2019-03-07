@@ -14,7 +14,7 @@ class AsiakasLista extends Component {
         console.log("AsiakasLista.componentDidMount");
         let komponentti = this;
 
-        fetch('https://localhost:44358/api/asiakkaat')
+        fetch('https://localhost:5001/api/asiakkaat')
         .then(response => response.json())
         .then(json => {
          
