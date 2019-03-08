@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import AsiakasLista from './AsiakasListaus';
+import Navigaatio from './Navigaatio';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
+    <div>    
+    <Navigaatio />
     <AsiakasLista />
+    </div>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
